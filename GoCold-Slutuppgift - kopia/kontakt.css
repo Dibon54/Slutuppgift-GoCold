@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    background-color: white;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.main-container > *{
+    flex-basis: 100%;
+}
+.left-container{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    justify-content: left;
+}
+.center-container{
+    display: flex;
+    text-align: center;
+    padding: 2em;
+    justify-content: center;
+}
+.right-container{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    justify-content: right;
+}
+.center-items{
+    font-size: 2em;
+}
+.center-items a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.items{
+    margin: 0em 1em 0 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: all 0.8s ease;
+    display: block;
+}
+.items h1{
+    color: brown;
+}
+.left-items{
+    padding-bottom: 0.35em;
+}
+.meny-symbol{
+    color: black;
+    font-size: 2em;
+    vertical-align:sub;
+}
+.meny{
+    color: black;
+    font-size: 1em;
+}
+.dropbtn{
+    width: 90%;
+    font-size: 1em;
+    margin: 5px 5px 0px 5px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 0;
+    transition: all 0.4s ease;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-left: 0.25em;
+    padding-top: 2.75em;
+    border: rgb(167, 167, 167) 0.1em solid;
+    border-top: none;
+    min-width: 9em;
+    z-index: 1;
+}
+
+.dropdown-link{
+    color: black;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.flagimg{
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align:text-bottom;
+}
+.language{
+    min-width: 200px;
+    width: 100%;
+}
+.flagimg2{
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
+}
+
+
+.arrow{
+    color: rgb(94, 94, 94);
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(228, 228, 228);
+}
+.dropdown-content2 a:hover{
+    background-color: orange;
+}
+#linklast:hover{
+    background-color: orange;
+}
+.dropdown:hover .dropdown-content{ display:block;}
+
+.dropdown:hover .dropdown-content2{ display:block;}
+
+.dropbtn:hover{
+    color:brown;
+}
+
+.dropdown-link:hover{
+    color: brown;
+}
+
+/*General */
+.main-article{
+    background-image: url(resources/OptimeradKontakt.webp);
+    background-size: cover;
+    padding: 4em;
+}
+.contact h1{
+    text-align: center;
+    color: brown;
+    font-family: 'Galada', sans-serif;
+    -webkit-text-stroke: 0.02em white;
+    font-size: 3em;
+}
+.border{
+    width: 7em;
+    height: 1em;
+    background: brown;
+    margin: 3em auto;
+}
+.contact-form{
+    max-width: 60em;
+    margin: auto;
+    padding: 0 1em;
+    overflow: hidden;
+}
+.contact-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em 0;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #ddd;
+    padding: 1em 2em;
+    transition: 0.5s;
+}
+.contact-text:hover{
+    box-shadow: 0em 0em 0.5em 0.2em brown;
+}
+textarea.contact-text{
+    resize: none;
+    height: 9em;
+}
+.btn-container{
+    display: flex;
+    justify-content: right;
+}
+.contact-button{
+    text-align: right;
+    border: none;
+    background: brown;
+    color: #ffff;
+    padding: 1em 4em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-button:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    width: 100%;
+    background-color: white;
+    border-top: black solid 0.02em;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    list-style: none;
+    width: 100%;
+}
+.left-footer{
+  list-style: none;
+  width: 30%;
+}
+.gocold{
+  margin: 0.5em 0em 0.5em 0em;
+  font-family: 'Roboto', sans-serif;
+  color: brown;
+  font-size: 2em;
+}
+.copyright{
+  font-family: 'Roboto', sans-serif;
+}
+.right-footer{
+  display: flex;
+  flex-direction: column;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+.contact-text-footer{
+  color: black;
+  margin-top: 32px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-size: larger;
+}
+.mail-box{
+  margin-left: 50px;
+  color:blue;
+}
+.mail-box input{
+  width: 230px;
+  height: 40px;
+  color:rgb(87, 87, 87); 
+  border-bottom-left-radius: 5px; 
+  border-top-left-radius: 5px;
+}
+.email-part{
+  display: flex;
+}
+.submit-btn{
+  text-decoration: none;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; 
+}
